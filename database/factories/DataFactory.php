@@ -20,7 +20,7 @@ class DataFactory extends Factory
     {
         $name = $this->faker->unique()->name();
         $company = $this->faker->unique()->company();
-        $codeSimple = Str::random(12);
+        $codeSimple = Str::random(8);
         $codeUpper = Str::upper($codeSimple);
 
         $encrypt = Crypt::encryptString($codeUpper);
